@@ -1,9 +1,26 @@
-import React from 'react'
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 
-function Layout() {
-  return (
-    <div>Layout</div>
-  )
-}
+const Layout = ({ children }) => {
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    }, []);
 
-export default Layout
+    return (
+        <div className="bg-base-100 text-base-content">
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+            <ScrollToTop />
+        </div>
+    );
+};
+
+export default Layout;
