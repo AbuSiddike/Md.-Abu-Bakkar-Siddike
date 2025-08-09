@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -16,7 +17,9 @@ const Layout = ({ children }) => {
     return (
         <div className="bg-base-100 text-base-content">
             <Navbar />
-            <main>{children}</main>
+            <main>
+                <Outlet />
+            </main>
             <Footer />
             <ScrollToTop />
         </div>
