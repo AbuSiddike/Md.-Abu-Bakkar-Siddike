@@ -52,7 +52,7 @@ const Navbar = () => {
                                     smooth={true}
                                     duration={500}
                                     offset={-70}
-                                    activeClass="text-primary"
+                                    // activeClass="text-primary"
                                     spy={true}
                                     className="cursor-pointer hover:text-info transition-colors font-medium"
                                 >

@@ -4,9 +4,9 @@ import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <section id="home" className="min-h-screen flex items-center pt-26">
-            <div className="container mx-auto px-6">
-                <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+        <section id="home" className="min-h-screen flex items-center">
+            <div className="container mx-auto px-6 mt-30">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-20">
                     {/* Profile Image */}
                     <div className="avatar" data-aos="fade-up">
                         <div className="w-60 md:w-80 rounded-full ring ring-info ring-offset-base-100 ring-offset-4">
@@ -74,7 +74,7 @@ const Hero = () => {
                             data-aos-delay="500"
                         >
                             <a
-                                href="https://github.com/yourusername"
+                                href="https://github.com/AbuSiddike"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-neutral-content hover:text-primary transition-colors"
@@ -83,7 +83,7 @@ const Hero = () => {
                                 <FaGithub size={24} />
                             </a>
                             <a
-                                href="https://linkedin.com/in/yourusername"
+                                href="https://www.linkedin.com/in/md-abu-bakkar-siddike-7745a2342"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-neutral-content hover:text-primary transition-colors"
