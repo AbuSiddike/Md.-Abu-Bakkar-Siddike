@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaArrowDown, FaFacebook } from "react-icons/fa";
 
 const Hero = () => {
     return (
@@ -77,7 +77,7 @@ const Hero = () => {
                                 href="https://github.com/AbuSiddike"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-neutral-content hover:text-primary transition-colors"
+                                className="text-neutral-content hover:text-info transition-colors"
                                 aria-label="GitHub"
                             >
                                 <FaGithub size={24} />
@@ -86,19 +86,19 @@ const Hero = () => {
                                 href="https://www.linkedin.com/in/md-abu-bakkar-siddike-7745a2342"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-neutral-content hover:text-primary transition-colors"
+                                className="text-neutral-content hover:text-info transition-colors"
                                 aria-label="LinkedIn"
                             >
                                 <FaLinkedin size={24} />
                             </a>
                             <a
-                                href="https://twitter.com/yourusername"
+                                href="https://www.facebook.com/ab.siddike.793748"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-neutral-content hover:text-primary transition-colors"
+                                className="text-neutral-content hover:text-info transition-colors"
                                 aria-label="Twitter"
                             >
-                                <FaTwitter size={24} />
+                                <FaFacebook size={24} />
                             </a>
                         </div>
 

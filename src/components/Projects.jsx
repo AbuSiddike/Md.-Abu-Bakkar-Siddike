@@ -43,7 +43,7 @@ const Projects = () => {
                     className="text-3xl font-bold mb-12 text-center"
                     data-aos="fade-up"
                 >
-                    My <span className="text-primary">Projects</span>
+                    My <span className="text-info">Projects</span>
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
