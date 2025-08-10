@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 const Navbar = () => {
@@ -9,24 +8,19 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 10) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
+            setScrolled(window.scrollY > 10);
         };
-
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     const navLinks = [
-        { name: "Home", to: "/" },
-        { name: "About", to: "/#about" },
-        { name: "Projects", to: "/#projects" },
-        { name: "Skills", to: "/#skills" },
-        { name: "Resume", to: "/#resume" },
-        { name: "Contact", to: "/#contact" },
+        { name: "Home", to: "home" },
+        { name: "About", to: "about" },
+        { name: "Projects", to: "projects" },
+        { name: "Skills", to: "skills" },
+        { name: "Resume", to: "resume" },
+        { name: "Contact", to: "contact" },
     ];
 
     return (
@@ -39,46 +33,39 @@ const Navbar = () => {
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
                 {/* Logo */}
-                <Link to="/" className="text-2xl font-bold">
-                    <span className="text-primary">&lt;</span>
-                    <span>YourName</span>
-                    <span className="text-primary">/&gt;</span>
-                </Link>
+                <ScrollLink
+                    to="home"
+                    smooth={true}
+                    duration={500}
+                    className="text-2xl font-bold text-info cursor-pointer"
+                >
+                    Siddike
+                </ScrollLink>
 
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex items-center space-x-8">
                     <ul className="flex space-x-8">
                         {navLinks.map((link) => (
                             <li key={link.to}>
-                                <NavLink
+                                <ScrollLink
                                     to={link.to}
-                                    className={({ isActive }) =>
-                                        `hover:text-primary transition-colors font-medium ${
-                                            isActive ? "text-primary" : ""
-                                        }`
-                                    }
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-70}
+                                    activeClass="text-primary"
+                                    spy={true}
+                                    className="cursor-pointer hover:text-info transition-colors font-medium"
                                 >
                                     {link.name}
-                                </NavLink>
+                                </ScrollLink>
                             </li>
                         ))}
                     </ul>
-                    <div className="flex space-x-4 ml-6">
-                        <a href="#" className="hover:text-primary">
-                            <FaGithub size={20} />
-                        </a>
-                        <a href="#" className="hover:text-primary">
-                            <FaLinkedin size={20} />
-                        </a>
-                        <a href="#" className="hover:text-primary">
-                            <FaTwitter size={20} />
-                        </a>
-                    </div>
                 </div>
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden text-white focus:outline-none"
+                    className="md:hidden text-base-content focus:outline-none"
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 >
                     {mobileMenuOpen ? (
@@ -95,32 +82,18 @@ const Navbar = () => {
                     <ul className="px-6 py-4 space-y-4">
                         {navLinks.map((link) => (
                             <li key={link.to}>
-                                <NavLink
+                                <ScrollLink
                                     to={link.to}
-                                    className={({ isActive }) =>
-                                        `block py-2 hover:text-primary ${
-                                            isActive ? "text-primary" : ""
-                                        }`
-                                    }
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-70}
                                     onClick={() => setMobileMenuOpen(false)}
+                                    className="block py-2 cursor-pointer hover:text-primary"
                                 >
                                     {link.name}
-                                </NavLink>
+                                </ScrollLink>
                             </li>
                         ))}
-                        <li className="pt-4 border-t border-neutral">
-                            <div className="flex space-x-6 justify-center">
-                                <a href="#" className="hover:text-primary">
-                                    <FaGithub size={20} />
-                                </a>
-                                <a href="#" className="hover:text-primary">
-                                    <FaLinkedin size={20} />
-                                </a>
-                                <a href="#" className="hover:text-primary">
-                                    <FaTwitter size={20} />
-                                </a>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             )}

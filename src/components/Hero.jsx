@@ -1,118 +1,124 @@
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <section id="home" className="min-h-screen flex items-center pt-16">
-            <div className="container mx-auto px-6 text-center">
-                {/* Profile Image */}
-                <div className="avatar mb-8 mx-auto" data-aos="fade-up">
-                    <div className="w-40 rounded-full ring ring-primary ring-offset-base-100 ring-offset-4">
-                        <img
-                            src="/assets/images/profile.jpg"
-                            alt="Profile"
-                            className="w-full h-full object-cover"
-                        />
+        <section id="home" className="min-h-screen flex items-center pt-26">
+            <div className="container mx-auto px-6">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+                    {/* Profile Image */}
+                    <div className="avatar" data-aos="fade-up">
+                        <div className="w-60 md:w-80 rounded-full ring ring-info ring-offset-base-100 ring-offset-4">
+                            <img
+                                src="https://i.ibb.co/7drZhd6D/admin-asif.jpg"
+                                alt="Profile_Photo"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
                     </div>
-                </div>
 
-                {/* Main Heading */}
-                <h1
-                    className="text-4xl md:text-6xl font-bold mb-4"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                >
-                    Hi, I'm <span className="text-primary">Your Name</span>
-                </h1>
+                    {/* Text Content */}
+                    <div className="text-center md:text-left max-w-2xl">
+                        <h1
+                            className="text-4xl md:text-6xl font-bold mb-4"
+                            data-aos="fade-up"
+                            data-aos-delay="100"
+                        >
+                            Hi, I'm{" "}
+                            <span className="text-info">
+                                Md Abu Bakkar Siddike
+                            </span>
+                        </h1>
+                        <h2
+                            className="text-xl md:text-2xl text-neutral-content mb-6"
+                            data-aos="fade-up"
+                            data-aos-delay="200"
+                        >
+                            MERN Stack Developer
+                        </h2>
+                        <p
+                            className="text-lg md:text-xl text-neutral-content mb-8"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                        >
+                            I build modern web applications with MongoDB,
+                            Express, React, and Node.js. Passionate about
+                            creating efficient, user-friendly solutions.
+                        </p>
 
-                {/* Subheading */}
-                <h2
-                    className="text-xl md:text-2xl text-neutral-content mb-8"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                >
-                    MERN Stack Developer
-                </h2>
+                        {/* Buttons */}
+                        <div
+                            className="flex flex-wrap justify-center md:justify-start gap-4"
+                            data-aos="fade-up"
+                            data-aos-delay="400"
+                        >
+                            <Link
+                                to="/contact"
+                                className="btn btn-info px-8 cursor-pointer hover:scale-105 transition-transform"
+                            >
+                                Contact Me
+                            </Link>
+                            <Link
+                                to="/projects"
+                                className="btn btn-outline btn-info px-8 cursor-pointer hover:scale-105 transition-transform"
+                            >
+                                View Projects
+                            </Link>
+                        </div>
 
-                {/* Description */}
-                <p
-                    className="text-lg md:text-xl max-w-2xl mx-auto mb-10 text-neutral-content"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                >
-                    I build modern web applications with MongoDB, Express,
-                    React, and Node.js. Passionate about creating efficient,
-                    user-friendly solutions.
-                </p>
+                        {/* Social Icons */}
+                        <div
+                            className="flex justify-center md:justify-start mt-10 space-x-6"
+                            data-aos="fade-up"
+                            data-aos-delay="500"
+                        >
+                            <a
+                                href="https://github.com/yourusername"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-neutral-content hover:text-primary transition-colors"
+                                aria-label="GitHub"
+                            >
+                                <FaGithub size={24} />
+                            </a>
+                            <a
+                                href="https://linkedin.com/in/yourusername"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-neutral-content hover:text-primary transition-colors"
+                                aria-label="LinkedIn"
+                            >
+                                <FaLinkedin size={24} />
+                            </a>
+                            <a
+                                href="https://twitter.com/yourusername"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-neutral-content hover:text-primary transition-colors"
+                                aria-label="Twitter"
+                            >
+                                <FaTwitter size={24} />
+                            </a>
+                        </div>
 
-                {/* Call-to-Action Buttons */}
-                <div
-                    className="flex flex-wrap justify-center gap-4"
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                >
-                    <Link
-                        to="/contact"
-                        className="btn btn-primary px-8 cursor-pointer hover:scale-105 transition-transform"
-                    >
-                        Contact Me
-                    </Link>
-                    <Link
-                        to="/projects"
-                        className="btn btn-outline btn-primary px-8 cursor-pointer hover:scale-105 transition-transform"
-                    >
-                        View Projects
-                    </Link>
-                </div>
-
-                {/* Social Icons */}
-                <div
-                    className="flex justify-center mt-12 space-x-6"
-                    data-aos="fade-up"
-                    data-aos-delay="500"
-                >
-                    <a
-                        href="https://github.com/yourusername"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-neutral-content hover:text-primary transition-colors"
-                        aria-label="GitHub"
-                    >
-                        <FaGithub size={24} />
-                    </a>
-                    <a
-                        href="https://linkedin.com/in/yourusername"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-neutral-content hover:text-primary transition-colors"
-                        aria-label="LinkedIn"
-                    >
-                        <FaLinkedin size={24} />
-                    </a>
-                    <a
-                        href="https://twitter.com/yourusername"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-neutral-content hover:text-primary transition-colors"
-                        aria-label="Twitter"
-                    >
-                        <FaTwitter size={24} />
-                    </a>
-                </div>
-
-                {/* Scroll Down Indicator */}
-                <div
-                    className="mt-16 animate-bounce"
-                    data-aos="fade-up"
-                    data-aos-delay="600"
-                >
-                    <Link
-                        to="/about"
-                        className="btn btn-ghost btn-circle cursor-pointer"
-                        aria-label="Scroll down"
-                    >
-                        <FaArrowDown size={24} />
-                    </Link>
+                        {/* Scroll Down */}
+                        <div
+                            className="mt-16 flex justify-center md:justify-start animate-bounce"
+                            data-aos="fade-up"
+                            data-aos-delay="600"
+                        >
+                            <ScrollLink
+                                to="about"
+                                smooth={true}
+                                duration={500}
+                                className="btn btn-ghost btn-circle cursor-pointer"
+                                aria-label="Scroll down"
+                            >
+                                <FaArrowDown size={24} />
+                            </ScrollLink>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
