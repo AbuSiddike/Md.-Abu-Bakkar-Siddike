@@ -77,7 +77,7 @@ const Hero = () => {
                                 href="https://github.com/AbuSiddike"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-neutral-content hover:text-info transition-colors"
+                                className="text-neutral-content hover:text-secondary transition-colors"
                                 aria-label="GitHub"
                             >
                                 <FaGithub size={24} />
@@ -86,7 +86,7 @@ const Hero = () => {
                                 href="https://www.linkedin.com/in/md-abu-bakkar-siddike-7745a2342"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-neutral-content hover:text-info transition-colors"
+                                className="text-neutral-content hover:text-secondary transition-colors"
                                 aria-label="LinkedIn"
                             >
                                 <FaLinkedin size={24} />
@@ -95,7 +95,7 @@ const Hero = () => {
                                 href="https://www.facebook.com/ab.siddike.793748"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-neutral-content hover:text-info transition-colors"
+                                className="text-neutral-content hover:text-secondary transition-colors"
                                 aria-label="Twitter"
                             >
                                 <FaFacebook size={24} />

@@ -36,7 +36,7 @@ const ScrollToTop = () => {
             {isVisible && (
                 <button
                     onClick={scrollToTop}
-                    className="btn btn-circle btn-primary shadow-lg tooltip tooltip-left"
+                    className="btn btn-circle btn-info shadow-lg tooltip tooltip-left"
                     data-tip="Back to top"
                 >
                     <FaArrowUp size={20} />
