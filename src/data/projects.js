@@ -1,7 +1,7 @@
 export const projects = [
     {
         id: 1,
-        title: "E-Commerce Platform",
+        title: "Employee Management System",
         description:
             "A full-featured online store with product listings, shopping cart, user authentication, and admin dashboard. Implemented secure payment processing with Stripe integration.",
         technologies: [
@@ -59,7 +59,7 @@ export const projects = [
     },
     {
         id: 3,
-        title: "Social Media Dashboard",
+        title: "Rootly - Gardener's Companion App",
         description:
             "An analytics dashboard for social media metrics with data visualization, customizable reports, and API integrations with major social platforms.",
         technologies: [
@@ -71,8 +71,9 @@ export const projects = [
             "JWT",
         ],
         image: "/assets/images/projects/dashboard.jpg",
-        githubUrl: "https://github.com/yourusername/social-dashboard",
-        liveUrl: "https://your-dashboard.vercel.app",
+        githubUrl:
+            "https://github.com/Programming-Hero-Web-Course4/b11a10-client-side-AbuSiddike.git",
+        liveUrl: " https://deluxe-empanada-890ba4.netlify.app",
         features: [
             "Interactive data visualizations",
             "Custom report generation",
