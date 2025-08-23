@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
-import Resume from "../components/Resume";
+import Education from "../components/Education";
 import Contact from "../components/Contact";
 
 function Home() {
@@ -12,7 +12,7 @@ function Home() {
             <AboutMe />
             <Projects />
             <Skills />
-            <Resume />
+            <Education />
             <Contact />
         </>
     );

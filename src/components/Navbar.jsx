@@ -16,7 +16,7 @@ const Navbar = () => {
 
     const navLinks = [
         { name: "Home", to: "home" },
-        { name: "About", to: "about" },
+        { name: "About Me", to: "about" },
         { name: "Projects", to: "projects" },
         { name: "Skills", to: "skills" },
         { name: "Resume", to: "resume" },
@@ -37,7 +37,7 @@ const Navbar = () => {
                     to="home"
                     smooth={true}
                     duration={500}
-                    className="text-2xl font-bold text-info cursor-pointer"
+                    className="text-3xl font-bold text-info cursor-pointer"
                 >
                     Siddike
                 </ScrollLink>

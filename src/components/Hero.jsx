@@ -3,6 +3,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { FaGithub, FaLinkedin, FaArrowDown, FaFacebook } from "react-icons/fa";
 
 const Hero = () => {
+    
     return (
         <section id="home" className="min-h-screen flex items-center">
             <div className="container mx-auto px-6 mt-30">
