@@ -19,8 +19,8 @@ const Navbar = () => {
         { name: "About Me", to: "about" },
         { name: "Projects", to: "projects" },
         { name: "Skills", to: "skills" },
-        { name: "Resume", to: "resume" },
-        { name: "Contact", to: "contact" },
+        { name: "Education", to: "resume" },
+        { name: "Contact Me", to: "contact" },
     ];
 
     return (
@@ -52,7 +52,6 @@ const Navbar = () => {
                                     smooth={true}
                                     duration={500}
                                     offset={-70}
-                                    // activeClass="text-primary"
                                     spy={true}
                                     className="cursor-pointer hover:text-info transition-colors font-medium"
                                 >

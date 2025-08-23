@@ -4,7 +4,7 @@ const AboutMe = () => {
     const stats = [
         { value: "3+", label: "Projects Completed" },
         { value: "10+", label: "Technologies Learned" },
-        { value: "2+", label: "Years of Experience" },
+        { value: "6+", label: "Months of Experience" },
     ];
 
     const skillsAreas = [
