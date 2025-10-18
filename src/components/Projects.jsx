@@ -1,6 +1,7 @@
 import { projects } from "../data/projects";
 import { Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { SiOpenproject } from "react-icons/si";
 
 const ProjectCard = ({ project }) => {
     return (
@@ -40,12 +41,12 @@ const Projects = () => {
         <section id="projects" className="py-20 bg-base-200">
             <div className="container mx-auto px-6">
                 <h2
-                    className="text-3xl font-bold mb-12 text-center"
+                    className="flex items-center justify-center text-3xl font-bold mb-12 gap-2"
                     data-aos="fade-up"
                 >
-                    My <span className="text-info">Projects</span>
+                    <SiOpenproject size={"1.5rem"} />
+                    <span className="text-info">Projects</span>
                 </h2>
-
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
                         <ProjectCard

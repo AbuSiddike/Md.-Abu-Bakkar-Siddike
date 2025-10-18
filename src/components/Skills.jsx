@@ -1,3 +1,4 @@
+import { GiSkills } from "react-icons/gi";
 import { skills } from "../data/skills";
 import { FaCode, FaServer, FaDatabase, FaTools } from "react-icons/fa";
 
@@ -29,10 +30,11 @@ const Skills = () => {
         <section id="skills" className="py-20 bg-neutral">
             <div className="container mx-auto px-6">
                 <h2
-                    className="text-3xl font-bold mb-12 text-center"
+                    className="flex items-center justify-center text-3xl font-bold mb-12 gap-2"
                     data-aos="fade-up"
                 >
-                    My <span className="text-info">Skills</span>
+                    <GiSkills size={"1.5rem"} />
+                    <span className="text-info">Skills</span>
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -1,4 +1,4 @@
-import { FaCode, FaServer, FaDatabase } from "react-icons/fa";
+import { FaCode, FaServer, FaDatabase, FaInfoCircle } from "react-icons/fa";
 
 const AboutMe = () => {
     const stats = [
@@ -29,10 +29,13 @@ const AboutMe = () => {
         <section id="about" className="py-20 bg-neutral">
             <div className="container mx-auto px-6">
                 <h2
-                    className="text-3xl font-bold mb-12 text-center"
+                    className="flex items-center justify-center text-3xl font-bold mb-12 gap-2"
                     data-aos="fade-up"
                 >
-                    About <span className="text-info">Me</span>
+                    <FaInfoCircle size={"1.5rem"} />
+                    <span>
+                        About <span className="text-info">Me</span>
+                    </span>
                 </h2>
 
                 <div className="flex flex-col lg:flex-row gap-12 items-center">
